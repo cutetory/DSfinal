@@ -1,7 +1,7 @@
 # 파이썬 3.9 & 3.10
 FROM pytorch/pytorch:1.13.1-cuda11.6-cudnn8-devel 
 
-WORKDIR /Diffusion
+WORKDIR /step1
 EXPOSE 8890
 
 # CUDA 경로 및 환경 변수 추가

@@ -1,18 +1,18 @@
-version: '0.1.0'
+version: '0.2.1'
 #shm_size는 본인의 컴퓨터 메모리에 따라서 조절해주시면 됩니다. 
 services:
   step1:
-  build: ./step1
-  shm_size: 4g
-  ports:
-    - 8890:8890
-  volumes:
-    - ./step1:/step1
-  # GPU 사용자 경우 아래 주석 해제
-  # deploy:
-  #   resources:
-  #     reservations:
-  #       devices:
-  #         - driver: nvidia
-  #           count : 1
-  #           capabilities: [gpu]
+    build: ./step1
+    shm_size: 4g
+    ports:
+      - 8890:8890
+    volumes:
+      - ./step1:/step1
+    # GPU 사용자 경우 아래 주석 해제
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count : 1
+    #           capabilities: [gpu]
